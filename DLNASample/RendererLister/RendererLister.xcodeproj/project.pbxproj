@@ -22,6 +22,7 @@
 		E1B572E01820174F00DF6661 /* libclinkc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B572DF1820174F00DF6661 /* libclinkc.a */; };
 		E1B572E5182019B900DF6661 /* NDLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B572E31820176300DF6661 /* NDLUtility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E1B572E918201A9E00DF6661 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B572E818201A9E00DF6661 /* libxml2.dylib */; };
+		E1B572EC18201C5300DF6661 /* RendererViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B572EB18201C5300DF6661 /* RendererViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E1B572E21820176300DF6661 /* NDLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDLUtility.h; sourceTree = "<group>"; };
 		E1B572E31820176300DF6661 /* NDLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDLUtility.m; sourceTree = "<group>"; };
 		E1B572E818201A9E00DF6661 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		E1B572EA18201C5300DF6661 /* RendererViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RendererViewController.h; sourceTree = "<group>"; };
+		E1B572EB18201C5300DF6661 /* RendererViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RendererViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				E1B572AA1820162300DF6661 /* AppDelegate.m */,
 				E1B572AC1820162300DF6661 /* Images.xcassets */,
 				E1B572A11820162300DF6661 /* Supporting Files */,
+				E1B572EA18201C5300DF6661 /* RendererViewController.h */,
+				E1B572EB18201C5300DF6661 /* RendererViewController.m */,
 			);
 			path = RendererLister;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B572AB1820162300DF6661 /* AppDelegate.m in Sources */,
+				E1B572EC18201C5300DF6661 /* RendererViewController.m in Sources */,
 				E1B572A71820162300DF6661 /* main.m in Sources */,
 				E1B572E5182019B900DF6661 /* NDLUtility.m in Sources */,
 			);
