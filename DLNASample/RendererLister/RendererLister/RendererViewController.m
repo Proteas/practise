@@ -7,6 +7,7 @@
 //
 
 #import "RendererViewController.h"
+#import "PlayerViewController.h"
 #import <CyberLink/UPnPAV.h>
 
 static NSString *kCellIdentifier = @"RendererCell";
@@ -109,6 +110,15 @@ static NSString *kCellIdentifier = @"RendererCell";
     cell.textLabel.text = [renderer.friendlyName stringByAppendingFormat:@"-%@", renderer.ipaddress];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    PlayerViewController *player = [[PlayerViewController alloc] init];
+    player.avRenderer = [_rendererList objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:player animated:YES];
 }
 
 #pragma -

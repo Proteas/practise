@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E18A8987182928AC00B00AFD /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A8986182928AC00B00AFD /* PlayerViewController.m */; };
 		E1B5729B1820162300DF6661 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B5729A1820162300DF6661 /* Foundation.framework */; };
 		E1B5729D1820162300DF6661 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B5729C1820162300DF6661 /* CoreGraphics.framework */; };
 		E1B5729F1820162300DF6661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B5729E1820162300DF6661 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E18A8985182928AC00B00AFD /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		E18A8986182928AC00B00AFD /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		E1B572971820162300DF6661 /* RendererLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RendererLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B5729A1820162300DF6661 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1B5729C1820162300DF6661 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -150,6 +153,8 @@
 				E1B572A11820162300DF6661 /* Supporting Files */,
 				E1B572EA18201C5300DF6661 /* RendererViewController.h */,
 				E1B572EB18201C5300DF6661 /* RendererViewController.m */,
+				E18A8985182928AC00B00AFD /* PlayerViewController.h */,
+				E18A8986182928AC00B00AFD /* PlayerViewController.m */,
 			);
 			path = RendererLister;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				E1B572EC18201C5300DF6661 /* RendererViewController.m in Sources */,
 				E1B572A71820162300DF6661 /* main.m in Sources */,
 				E1B572E5182019B900DF6661 /* NDLUtility.m in Sources */,
+				E18A8987182928AC00B00AFD /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
