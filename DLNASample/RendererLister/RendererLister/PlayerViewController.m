@@ -10,7 +10,7 @@
 #import <CyberLink/UPnPAV.h>
 
 static NSString * const kVideoURLStr =
-@"http://123.125.86.11/vlive.qqvideo.tc.qq.com/m0013lwk0pl.mp4?vkey=A07DC25BC50127BB71AA1059AD431FDFC3AA80E22BC871AA9CFFFF6E63C130F9F996E9F1A9120975&br=66&platform=10103&fmt=mp4&level=3&sdtfrom=v4000";
+@"http://119.188.71.28/vlive.qqvideo.tc.qq.com/c0013t5lpwn.mp4?vkey=AB28806443FEFD1FC88D97195E10E907BAE0F22420944D29F687D71D81ACA73799A76DF80F1C7041&br=66&platform=10103&fmt=mp4&level=3&sdtfrom=v4000&locid=257add52-9916-4245-9173-6db0d4ecd480&size=150494262&ocid=136454060";
 
 @interface PlayerViewController () <CGUpnpDeviceDelegate>
 
@@ -55,11 +55,17 @@ static NSString * const kVideoURLStr =
     self.avRenderer.delegate = self;
     result = [self.avRenderer stop];
     NSLog(@"----------------->stop: %d", result);
-    result = [self.avRenderer setAVTransportURI:@"http://123.125.86.36/0/vlive.qqvideo.tc.qq.com/c0013t5lpwn.mp4?vkey=29411456E895E2E93185D438E4D7BB15BFAE3E2818BC2EDD7995E92227AD4A0D3F4D0B1D8027926D&br=66&platform=10103&fmt=mp4&level=3&sdtfrom=v4000"];
+    result = [self.avRenderer setAVTransportURI:@"!!! DLNA Supported Video Link !!!"];
     NSLog(@"----------------->setAVTransportURI: %d", result);
     
     result = [self.avRenderer play];
     NSLog(@"----------------->play: %d", result);
+    
+    result = [self.avRenderer seek:4.262611];
+    NSLog(@"----------------->seek: %d", result);
+    
+    result = [self.avRenderer isPlaying];
+    NSLog(@"----------------->isPlaying: %d", result);
 }
 
 - (BOOL)device:(CGUpnpDevice *)device service:(CGUpnpService *)service actionReceived:(CGUpnpAction *)action

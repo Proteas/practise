@@ -59,7 +59,7 @@ static NSString *kCellIdentifier = @"RendererCell";
     _activityIndicator.hidden = YES;
 
     self.clearsSelectionOnViewWillAppear = YES;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+    //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
  
     UIBarButtonItem *findBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"Find" style:UIBarButtonItemStyleBordered target:self action:@selector(onFinderRenderer:)];
     self.navigationItem.rightBarButtonItem = findBtnItem;
