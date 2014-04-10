@@ -12,4 +12,4 @@ codesign:
 	ldid -S kevent_demo
 
 clean:
-	rm main
+	rm kevent_demo
