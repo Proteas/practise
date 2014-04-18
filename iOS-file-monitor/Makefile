@@ -18,12 +18,10 @@ all: iOS OSX
 
 iOS: fsevents.h file-monitor.c
 	$(CC_IOS) -o file-monitor-armv7 file-monitor.c $(ARCH_IOS) $(MIN_VER_IOS) -isysroot $(SDK_IOS_DEVICE) -I$(SDK_IOS_DEVICE)/usr/include -I.
+	ldid -S file-monitor-armv7
 
 OSX: fsevents.h file-monitor.c
 	$(CC_OSX) -o file-monitor-x86_64 file-monitor.c $(ARCH_OSX) $(MIN_VER_OSX) -isysroot $(SDK_OSX) -I$(SDK_OSX)/usr/include -I.
-
-codesign:
-	ldid -S file-monitor
 
 clean:
 	rm -f file-monitor
