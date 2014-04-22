@@ -38,6 +38,7 @@ extern "C" void log_fprintf(FILE * stream, const char *format, va_list arg)
     size_t buf_location_middle = buf_location_start + format_str_len + holder_count;
     for (int idx = 0; idx < format_str_len; ++idx) {
         char temp = *(format + idx);
+        // FixMe: "%%"
         if (temp == '%') {
             *(buf + buf_location_start) = '%';
             ++buf_location_start;
